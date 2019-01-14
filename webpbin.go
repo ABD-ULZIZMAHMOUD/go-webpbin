@@ -2,13 +2,14 @@ package webpbin
 
 import (
 	"bytes"
-	"github.com/nickalie/go-binwrapper"
 	"image"
 	"image/png"
 	"io"
 	"io/ioutil"
 	"runtime"
 	"strings"
+
+	binwrapper "github.com/mjarkk/go-binwrapper"
 )
 
 var skipDownload bool
@@ -16,7 +17,7 @@ var dest = "vendor/webp"
 
 // DetectUnsupportedPlatforms detects platforms without prebuilt binaries (alpine and arm).
 // For this platforms libwebp tools should be built manually.
-// See https://github.com/nickalie/go-webpbin/blob/master/docker/Dockerfile and https://github.com/nickalie/go-webpbin/blob/master/docker/Dockerfile.arm for details
+// See https://github.com/mjarkk/go-webpbin/blob/master/docker/Dockerfile and https://github.com/mjarkk/go-webpbin/blob/master/docker/Dockerfile.arm for details
 func DetectUnsupportedPlatforms() {
 	if runtime.GOARCH == "arm" {
 		SkipDownload()

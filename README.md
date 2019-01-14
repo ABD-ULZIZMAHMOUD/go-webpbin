@@ -1,13 +1,13 @@
 # WebP Encoder/Decoder for Golang
 
-[![](https://img.shields.io/badge/docs-godoc-blue.svg)](https://godoc.org/github.com/nickalie/go-webpbin)
-[![](https://circleci.com/gh/nickalie/go-webpbin.png?circle-token=ebaa6a739ac4dc96dcb167e0700dcc699409f672)](https://circleci.com/gh/nickalie/go-webpbin)
+[![](https://img.shields.io/badge/docs-godoc-blue.svg)](https://godoc.org/github.com/mjarkk/go-webpbin)
+[![](https://circleci.com/gh/mjarkk/go-webpbin.png?circle-token=ebaa6a739ac4dc96dcb167e0700dcc699409f672)](https://circleci.com/gh/mjarkk/go-webpbin)
 
 WebP Encoder/Decoder for Golang based on official libwebp distribution
 
 ## Install
 
-```go get -u github.com/nickalie/go-webpbin```
+```go get -u github.com/mjarkk/go-webpbin```
 
 ## Example of usage
 
@@ -19,7 +19,7 @@ import (
 	"image/color"
 	"log"
 	"os"
-	"github.com/nickalie/go-webpbin"
+	"github.com/mjarkk/go-webpbin"
 )
 
 func main() {

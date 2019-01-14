@@ -3,9 +3,10 @@ package webpbin
 import (
 	"errors"
 	"fmt"
-	"github.com/nickalie/go-binwrapper"
 	"image"
 	"io"
+
+	binwrapper "github.com/mjarkk/go-binwrapper"
 )
 
 type cropInfo struct {
